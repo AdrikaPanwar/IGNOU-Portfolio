@@ -1,0 +1,52 @@
+body {
+    background-color: #000;
+    /* Black background for a classy look */
+    color: #fff;
+    /* White text color */
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.card {
+    background-color: #333;
+    /* Dark background for the cards */
+    color: #fff;
+    /* White text color */
+    border: none;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.flash-card {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    border: 1px solid #444;
+    /* Floating animation */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Float animation keyframes */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+footer {
+    margin-top: 50px;
+}
